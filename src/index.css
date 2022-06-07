@@ -1,0 +1,263 @@
+html {
+  margin: 0;
+}
+.App {
+  text-align: center;
+  padding-top: 42vh;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #e94942;
+}
+#root {
+  background-image: url("images/rotomdexlg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+/* DivTable.com */
+.table {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.75rem;
+}
+
+.tableBody {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  opacity: 0.9;
+  background-color: #e94942;
+  border: 1px solid red;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  padding: 1rem 0;
+  position: relative;
+}
+
+img {
+  width: 35%;
+  height: 35%;
+  background-color: whitesmoke;
+  border: 1px solid red;
+  box-shadow: inset 0 0 2px;
+  margin: 0 0.75rem;
+}
+
+input {
+  box-sizing: border-box;
+  font-size: 2rem;
+  padding: 1rem;
+  display: block;
+  margin: 2rem auto;
+}
+
+.tableStat {
+  display: flex;
+  height: 2.25rem;
+}
+
+.statName {
+  width: 40%;
+  text-align: left;
+  border: 1px solid red;
+  box-shadow: inset 0 0 2px;
+}
+
+.statValue {
+  width: 60%;
+  text-align: left;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25) 0 0);
+  border: 1px solid red;
+}
+
+.statBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: inset 0 0 2px;
+}
+
+.statNumber {
+  position: absolute;
+  z-index: 1;
+}
+
+.statText {
+  padding-left: 10px;
+  padding-top: 4px;
+  filter: brightness(0.65);
+  font-size: 1.5rem;
+}
+
+.buttons {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  flex-direction: row;
+  top: 1.75rem;
+  left: 0;
+}
+
+.button {
+  width: 3rem;
+  height: 1rem;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.title {
+  font-size: 2rem;
+  margin-top: -0.75rem;
+  width: 40%;
+}
+
+.title::first-letter {
+  text-transform: capitalize;
+}
+
+.types {
+  display: flex;
+  color: white;
+  font-size: 1.25rem;
+  text-shadow: 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black;
+  margin-top: -0.35rem;
+  padding-bottom: 1rem;
+  width: 40%;
+  height: 1.75rem;
+}
+
+.normal {
+  background-color: whitesmoke;
+}
+
+.water {
+  background-color: blue;
+}
+
+.fire {
+  background-color: red;
+}
+
+.grass {
+  background-color: green;
+}
+
+.flying {
+  background-color: lightblue;
+}
+
+.fighting {
+  background-color: brown;
+}
+
+.dark {
+  background-color: black;
+}
+
+.ghost {
+  background-color: darkslateblue;
+}
+
+.psychic {
+  background-color: violet;
+}
+
+.fairy {
+  background-color: pink;
+}
+
+.dragon {
+  background-color: darkcyan;
+}
+
+.steel {
+  background-color: slategrey;
+}
+
+.rock {
+  background-color: saddlebrown;
+}
+
+.ground {
+  background-color: darkgoldenrod;
+}
+
+.ice {
+  background-color: aquamarine;
+}
+
+.bug {
+  background-color: greenyellow;
+}
+
+.poison {
+  background-color: purple;
+}
+
+.electric {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 55rem) {
+
+  #root {
+    background-image: url("images/rotomdexsm.png");
+  }
+  .App {
+    padding-top: 19vh;
+  }
+  input {
+    padding: 0;
+    margin: 0.5rem auto;
+    width: 90%;
+  }
+  img {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .buttons {
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+  }
+  .table, .tableBody {
+    width: 100%;
+  }
+  .statName {
+    width: 30%;
+  }
+  .statValue {
+    width: 70%;
+  }
+  .types {
+    width: 40%;
+  }
+  .tableStat {
+    height: 2rem;
+  }
+
+}
